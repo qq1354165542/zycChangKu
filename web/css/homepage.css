@@ -1,0 +1,227 @@
+/*
+ * 全局选择器去除所有的内外边距
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ *设置所有的图片不予许选中
+ */
+img{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+/*
+ *去除a标签默认样式
+ */
+a {
+    text-decoration:none;
+    out-line: none;
+    color: black;
+}
+
+
+/*
+ *设置网页头部的样式
+ */
+.header{
+    margin: 0 auto;
+    color: white;
+    font-size: 22px;
+    width: 1360px;
+    font-family: 宋体,楷体;
+    border:  1px solid red;
+}
+
+/*
+ * 设置网页头部第一个div样式
+ */
+.header-first{
+    width: 1360px;
+    margin: 0 auto;
+    height: 70px;
+    border:  1px solid red;
+    background: rgba(79,79,79,0.2);
+    position: absolute;
+}
+
+/*
+ *设置网页头部第一个div下的logo样式
+ */
+.header-first-logo{
+    border:  1px solid red;
+    position: absolute;
+    top:15px;
+    left: 80px;
+}
+
+/*
+ *设置网页头部第一个div下的查询框样式
+ */
+.header-first-query{
+    position: absolute;
+    top: 15px;
+    left: 490px;
+    border:  1px solid red;
+}
+
+.header-first-login{
+    float: right;
+    width: 100px;
+    height: 40px;
+    border:  1px solid red;
+    margin-top: 15px;
+    margin-right:80px ;
+}
+/*
+ *设置logo图片的大小
+ */
+.header-first-logo img{
+    width: 60px;
+    height: 40px;
+}
+/*
+ * 设置搜索框下第一个元素的样式
+ */
+.header-first-query :nth-child(1){
+    float: left;
+    height: 40px;
+    width: 300px;
+    color: white;
+    text-indent: 15px;
+    font-size: 22px;
+    font-family: 宋体;
+    outline: none;
+    background: rgba(79,79,79,0.2);
+    border-radius:20px 0px 0px 20px;
+}
+/*
+ *设置搜索框下第二个元素的样式
+ */
+.header-first-query :nth-child(2){
+    float: right;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 宋体;
+    font-size: 22px;
+    outline: none;
+    border-radius:0px 20px 20px 0px;
+    background: orange;
+    /*设置字体不被选中*/
+    -webkit-user-select:none;
+
+    -moz-user-select:none;
+
+    -ms-user-select:none;
+
+    user-select:none;
+}
+.header-first-login ul li{
+    display: inline-block;
+}
+.header-first-login ul li:nth-child(2){
+    float: left;
+}
+.header-first-login ul li:nth-child(2){
+    float: right;
+}
+.header-first-login img{
+    width: 40px;
+    height: 40px;
+    border:  1px solid red;
+}
+
+/*
+ *设置网页头最后div样式
+ */
+.header-last{
+    height: 500px;
+    width: 1360px;
+    margin: 0 auto;
+    border:  1px solid red;
+
+}
+.header-last-slideshow{
+    float: left;
+    width: 1000px;
+    height: 500px;
+    border:  1px solid red;
+}
+.header-last-ranking{
+    float: right;
+    width: 356px;
+    height: 500px;
+    border:  1px solid red;
+}
+
+
+/*
+ *设置网页主体
+ */
+.content{
+    margin: 0 auto;
+    width: 1366px;
+    height: 800px;
+    border: 0px solid red;
+}
+
+/*
+  排行榜样式
+ */
+.paihang{
+    border: 1px solid black;
+    height: 430px;
+    margin-top: 70px;
+}
+.paihang>li{
+    border: 1px solid blue;
+    color: #000;
+    list-style-type: none;
+}
+.paihang>li:nth-child(1){
+    font-weight: bold;
+}
+
+/*
+*
+*/
+.content-biaoqian{
+    border:  1px solid red;
+    margin: 0 auto;
+    width: 1050px;
+    height: 50px;
+}
+.content-biaoqian ul li{
+    margin: 0 auto;
+    display: inline;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+}
+.content-video{
+    border:  1px solid red;
+    margin: 0 auto;
+    width: 1050px;
+}
+.content-video video{
+    width: 250px;
+}
+.content-video ul li{
+    font-family: 宋体;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+.content-video p{
+    margin: 0;
+    padding:0;
+    display: inline-block;
+}
