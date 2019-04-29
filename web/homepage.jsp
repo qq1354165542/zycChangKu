@@ -52,7 +52,7 @@
             <ul class="paihang">
                 <li>本周热门</li>
                 <c:forEach var="i" items="${requestScope.paiHangVideoInfo}">
-                    <li>${i.name}</li>
+                    <li><a href="">${i.name}</a></li>
                 </c:forEach>
             </ul>
         </div>
